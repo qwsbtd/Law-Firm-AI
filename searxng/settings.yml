@@ -1,0 +1,40 @@
+use_default_settings: true
+
+general:
+  instance_name: "Law Firm AI Search"
+  enable_metrics: false
+
+search:
+  safe_search: 0
+  autocomplete: ""
+  default_lang: "en"
+  formats:
+    - html
+    - json
+
+server:
+  secret_key: "bb675efddb542639a4c0a4a9e2d42351680567dd0e34a38f241db84cff0ef911"
+  limiter: false
+  image_proxy: false
+  port: 8080
+  bind_address: "0.0.0.0"
+
+ui:
+  static_use_hash: true
+  default_theme: simple
+  center_alignment: true
+
+# Optimized engine set for legal research
+engines:
+  - name: google
+    disabled: false
+  - name: bing
+    disabled: false
+  - name: duckduckgo
+    disabled: false
+  - name: brave
+    disabled: false
+  - name: wikipedia
+    disabled: false
+  - name: presearch
+    disabled: false
